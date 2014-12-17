@@ -11,9 +11,10 @@ class CeisSurveyDefaultController extends Controller {
     public function indexAction(Request $request) {
 
         $person = new Person();
-
-        $person->setUsername('Girish');
-        $person->setPassword('123456');
+        
+        //Temparary data
+        $person->setUsername('gtaware');
+      
 
 
         $form = $this->createFormBuilder($person)
